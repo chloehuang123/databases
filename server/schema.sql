@@ -5,7 +5,7 @@ USE chat;
 CREATE TABLE messages (
   /* Describe your table here.*/
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  text_message VARCHAR(200) NOT NULL,
+  message VARCHAR(200) NOT NULL,
   room_id INT NOT NULL,
   user_id INT NOT NULL
 );
@@ -15,13 +15,13 @@ CREATE TABLE messages (
 CREATE TABLE rooms (
   /* Describe your table here.*/
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-room VARCHAR(200) NOT NULL
+roomname VARCHAR(200) NOT NULL
 );
 
 CREATE TABLE users (
   /* Describe your table here.*/
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-user VARCHAR(200) NOT NULL
+username VARCHAR(200) NOT NULL
 );
 
 
